@@ -1,12 +1,12 @@
 angularJS.All
 =============
-A concated and uglified version of AngularJS that has all of the angular add on modules included, only slightly larger than the google ultra optimzed closure minified versions when uncompressed and almost identical when gzip'd. 
+A concated and uglified version of AngularJS that has all of the angular add on modules included, only slightly larger than the google ultra optimzed closure minified versions when uncompressed and slightly smaller when gzip'd. 
 
 The minified versions of these files are also available on jsDelivr.com a free cdn repository 
 ###Versions and Sizes###
 ```
 Version                   Google             angular-all.min.js 
-Latest 1.3.0-beta.13      136K  .gz = 68K               
+Latest 1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 53K            
 Stable 1.2.18             130K  .gz = 52K    140K  .gz = 51K
 ```
 Any other versions that were generated will be maintained and available on both this repository through version tags, and on jsDelivr through the same. 
