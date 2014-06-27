@@ -6,7 +6,7 @@ The gzip'd file is not that much bigger at all ( when you consider adding in the
 
 This repositry auto updates at 06:30 PST
 
-The minified versions of these files are also available on jsDelivr.com a free cdn repository and also auto updates when a new version becomes avaialable.  
+The minified versions of these files are also available on jsDelivr.com a free cdn repository which also auto updates when a new version becomes avaialable.  
 
 ###Versions###
 latest will be the latest beta  as of today  : 1.3.0-beta.13
