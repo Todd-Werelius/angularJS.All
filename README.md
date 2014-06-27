@@ -1,25 +1,32 @@
 angularJS.All
 =============
-A concated and uglified version of AngularJS that has all of the sub libraries added. The resulting file will be larger than the google version since they use closure with a lot of custom options to crunch it down as much as possible.
-
-The gzip'd file is not that much bigger at all ( when you consider adding in the other lib's ) 
-
-This repositry auto updates at 06:30 PST
+A concated and uglified version of AngularJS that has all of the sub libraries added, only slightly larger than the google ultra optimzed closure minified versions when uncompressed and almost identical when gzip'd. 
 
 The minified versions of these files are also available on jsDelivr.com a free cdn repository 
 ###Versions###
 ```
-latest will be the latest betaas of today    : 1.3.0-beta.13
-legacy will be the latest stable as of today : 1.2.18
+Version                   Google          angular-all.min.js 
+Latest 1.3.0-beta.13      136K  68K.gz              
+Stable 1.2.18             130K  52K.gz    140K  51K.gz
 ```
-Any other versions that were generated will still be available on both this site through version tags, and jsDelivr through the same. 
+Any other versions that were generated will still be available on both this site through version tags, and on jsDelivr through the same. 
 ###Includes###
 ``` 
+Common
+---------------------
 angular.js
 angular-animate.js
 angular-cookies.js
+angular-loader.js
+angular-resources.js
 angular-route.js
 angular-sanitize.js
+angular-touch.js
+
+1.3.x
+---------------------
+angular-messags.js
+
 ```
 ###Concated and Uglified###
 ```
