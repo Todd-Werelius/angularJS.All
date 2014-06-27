@@ -23,10 +23,11 @@ angular-sanitize.js
 
 
 ###Concated and Uglified
-```angular-all.js.min```
-
+```
+angular-all.js.min
+```
 ###Map
-```angular-all.js.min.map``` 
+angular-all.js.min.map
 
 Is a map file with bundled source code that is useful if you need debugging. The source=[]... links will not be useful to you unless you create a similar directory structure on your own projects, or fork this project and create your own.
 
