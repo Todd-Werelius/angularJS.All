@@ -6,7 +6,7 @@ The gzip'd file is not that much bigger at all ( when you consider adding in the
 
 This repositry auto updates at 06:30 PST
 
-The minified versions of these files are also available on jsDelivr.com a free cdn repository which also auto updates when a new version becomes avaialable.  
+The minified versions of these files are also available on jsDelivr.com a free cdn repository 
 ###Versions###
 ```
 latest will be the latest betaas of today    : 1.3.0-beta.13
@@ -32,12 +32,16 @@ angular-all.js.min.map
 Is a map file with bundled source code that is useful if you need debugging. The source=[]... links will not be useful to you unless you create a similar directory structure on your own projects, or fork this project and create your own.
 
 You won't need though since as was mentioned the source code is emebed directly into the map file
-###Building
+###Building###
 This project is built using gulp, which requires node.  If you already have node simply run the following commands from the directory that this project resides in
-###Make sure all dependencies are present###
-npm install   
+#Make sure all dependencies are present#
+'''
+npm install
+'''
 ###Get the latest angular files###
+'''
 node updateme
+'''
 ###Recreate angular-all.min.js etc###
 '''
 gulp build
