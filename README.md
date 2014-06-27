@@ -28,9 +28,13 @@ angular-touch.js
 angular-messags.js
 
 ```
-###Concated and Uglified###
+###Outputs###
 ```
-angular-all.js.min
+Name                  Gzip'd  Contents
+-----------------------------------------------------------------
+angular-all.js         +.gz   Concatted unminfied output 
+angular-all.js.min     +.gz   Concatted miniifed output   
+angular-all.js.min.map +.gz   Sourcemap with emebded source code 
 ```
 ###Map###
 ```
@@ -45,12 +49,8 @@ This project is built using gulp, which requires node.  Install node first, if y
 ```
 npm install
 ```
-####Get the latest angular files####
-```
-node updateme
-```
 ####Recreate angular-all.min.js etc####
 ```
-gulp build
+gulp 
 ```
-angular-all.min.js and angular-all.min.js.map will then be placed in the same directory that 
+
