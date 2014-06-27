@@ -34,16 +34,16 @@ Is a map file with bundled source code that is useful if you need debugging. The
 You won't need though since as was mentioned the source code is emebed directly into the map file
 ###Building###
 This project is built using gulp, which requires node.  If you already have node simply run the following commands from the directory that this project resides in
-#Make sure all dependencies are present#
-'''
+####Make sure all dependencies are present####
+```
 npm install
-'''
-###Get the latest angular files###
-'''
+```
+####Get the latest angular files####
+```
 node updateme
-'''
-###Recreate angular-all.min.js etc###
-'''
+```
+####Recreate angular-all.min.js etc####
+```
 gulp build
-'''
+```
 angular-all.min.js and angular-all.min.js.map will then be placed in the same directory that 
