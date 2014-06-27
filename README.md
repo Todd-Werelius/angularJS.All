@@ -30,11 +30,11 @@ angular-messags.js
 ```
 ###Outputs###
 ```
-Name                  Gzip'd  Contents
+Name                   Gzip'd  Contents
 -----------------------------------------------------------------
-angular-all.js         +.gz   Concatted unminfied output 
-angular-all.js.min     +.gz   Concatted miniifed output   
-angular-all.js.min.map +.gz   Sourcemap with emebded source code 
+angular-all.js         +.gz    Concatted unminfied output 
+angular-all.js.min     +.gz    Concatted miniifed output   
+angular-all.js.min.map +.gz    Sourcemap with emebded source code 
 ```
 ###Map###
 ```
