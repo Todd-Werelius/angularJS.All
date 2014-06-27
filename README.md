@@ -2,7 +2,7 @@ angularJS.All
 =============
 A concated and uglified version of AngularJS that has all of the sub libraries added. The resulting file will be larger than the google version since they use closure with a lot of custom options to crunch it down as much as possible.
 
-The gzip'd file is not that much bigger at all ( when you consider adding in the other lib's) 
+The gzip'd file is not that much bigger at all ( when you consider adding in the other lib's ) 
 
 This repositry auto updates at 06:30 PST
 
