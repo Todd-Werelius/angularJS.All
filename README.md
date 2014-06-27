@@ -14,7 +14,7 @@ legacy will be the latest stable as of today : 1.2.18
 
 Any other versions that were generated will still be available on both this site through version tags, and jsDelivr through the same 
 
-###Includes### 
+Includes
 angular.js
 angular-animate.js
 angular-cookies.js
@@ -22,7 +22,7 @@ angular-route.js
 angular-sanitize.js
 
 
-###Concated and Uglified###   
+Concated and Uglified
 angular-all.js.min
 
 ###Map###
@@ -38,10 +38,10 @@ This project is built using gulp, which requires node.  If you already have node
 ###Make sure all dependencies are present###
 npm install   
 
-###Get the latest angular files ( if you think these are out of date ) 
+###Get the latest angular files### 
 node updateme
 
-###Recreate angular-all.min.js and angular-all.min.js.map
+###Recreate angular-all.min.js and angular-all.min.js.map###
 gulp build
 
 angular-all.min.js and angular-all.min.js.map will then be placed in the same directory that 
