@@ -7,10 +7,10 @@ The minified versions of these files are also available on jsDelivr.com a free c
 ```
 Version                   Google             angular-all.min.js 
 Latest 1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 53K            
-Stable 1.2.18             130K  .gz = 52K    140K  .gz = 51K
+Stable 1.2.18             130K  .gz = 52K    137K  .gz = 50K
 ```
 Any other versions that were generated will be maintained and available on both this repository through version tags, and on jsDelivr through the same. 
-###Includes###
+###Modules Included###
 ``` 
 Common
 ---------------------
