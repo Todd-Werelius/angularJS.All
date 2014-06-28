@@ -10,6 +10,8 @@ var ris           = require('run-sequence');
 var debug         = require('gulp-debug');
 var footer        = require('gulp-footer');
 
+var fs            = require('fs');
+
 gulp.task('server', function () {
   connect.server( {
     port : 8000
@@ -46,7 +48,11 @@ gulp.task('concat',function() {
 gulp.task('uglify',function(cb) {
   return gulp.src(concatName)
     .pipe(rename(minName))
-    .pipe(uglify())
+    .pipe(uglify({
+      output: {
+        ascii_only: true
+      }
+    }))
     .pipe(footer('\n//# sourceMappingURL='+mapName))
     .pipe(gulp.dest('.'))
     .pipe(gzip({gzipOptions : { level : 9}}))
