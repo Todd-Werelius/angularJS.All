@@ -1,7 +1,7 @@
 {
   "name": "angularjs-all",
   "version": "1.0.0",
-  "description": "AngularJS + All Sub Projects",
+  "description": "AngularJS + All Sub Projects", 
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
