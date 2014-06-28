@@ -51,6 +51,6 @@ npm install
 ```
 ####Recreate angular-all.min.js etc from source####
 ```
-gulp 
+gulp
 ```
 
