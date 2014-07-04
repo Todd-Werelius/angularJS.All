@@ -6,8 +6,8 @@ The minified versions of these files are also available on jsDelivr.com a free c
 ###Versions and Sizes###
 ```
 Version Latest     Google (summed)    angular-all.min.js     jsDelivr ( not optimally gzip'd )   
-1.3.0-beta.14      136K  .gz = 55K    143K  .gz = 53K        .gz = 60K 
-1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 53K        .gz = 60K       
+1.3.0-beta.14      136K  .gz = 55K    143K  .gz = 51K        .gz = 60K 
+1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 50K        .gz = 60K       
 
 Version Stable     Google (summed)    angular-all.min.js     jsDelivr ( not optimally gzip'd )
 1.2.19             130K  .gz = 52K    137K  .gz = 50K        .gz = 60K 
@@ -43,7 +43,7 @@ angular-all.js.min.map +.gz    Sourcemap with google repository linked source co
 ```
 angular-all.js.min.map +.gz
 ```
-Map files are download able by browsers if the map file is availble and in the same place as the .js file that being server.  You simply place it in the same location on the server and the debugger figures out the rest. Map files are used by debuggers to replace minified source on the fly making debugging possible.  This map file links to googles cdn souce code to keep it under 30K ( else it would be closer to 1mb! ) 
+Map files are download able by browsers if the map file is availble and in the same place as the .js file that being server.  You simply place it in the same location on the server and the debugger figures out the rest. Map files are used by debuggers to replace minified source on the fly making debugging possible.  This map file links to googles cdn souce code to keep it under 25K ( else it would be closer to 1mb! ) 
 
 
 ###Building###
