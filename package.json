@@ -1,7 +1,7 @@
 {
   "name": "angularjs-all",
   "version": "1.0.0",
-  "description": "AngularJS + All Sub Projects", 
+  "description": "AngularJS + All Sub Projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,15 +19,13 @@
   "devDependencies": {
     "gulp": "^3.8.5",
     "gulp-clean": "^0.3.1",
-    "gulp-concat": "^2.2.0",
-    "gulp-debug": "^0.3.0",
-    "gulp-filter": "^0.5.0",
-    "gulp-footer": "^1.0.4",
+    "gulp-concat-sourcemapped": "^0.0.1",
     "gulp-gzip": "0.0.8",
-    "gulp-ng-annotate": "^0.2.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-sourcemaps": "^0.4.1",
+    "gulp-sourcemapper": "^0.0.1",
     "gulp-uglify": "^0.3.1",
     "run-sequence": "^0.3.6"
+  },
+  "dependencies": {
+
   }
 }

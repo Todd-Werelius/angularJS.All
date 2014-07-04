@@ -1,16 +1,12 @@
 var gulp          = require('gulp'); 
 var path          = require('path');
 var clean         = require('gulp-clean');
-var concat        = require('gulp-concat-sourcemap');
+var concat        = require('gulp-concat-sourcemapped');
+var sourceMapper  = require('gulp-sourcemapped');
 var gzip          = require('gulp-gzip');
 var uglify        = require('gulp-uglify');
-var NGMin         = require('gulp-ng-annotate');
-var rename        = require('gulp-rename');
 var ris           = require('run-sequence');
 var debug         = require('gulp-debug');
-var footer        = require('gulp-footer');
-
-var fs            = require('fs');
 
 gulp.task('server', function () {
   connect.server( {
@@ -18,10 +14,9 @@ gulp.task('server', function () {
   });
 });
 
-gulp.task('default',function(cb){
+gulp.task('default',function(done){
   ris('clean',
-      'concat',
-      'uglify',cb);
+      'build',done);
 });
 
 gulp.task('clean',function() {
@@ -29,33 +24,27 @@ gulp.task('clean',function() {
     .pipe(clean({read : false}));
 });
 
-var concatName = 'angular-all.js';
 var minName    = 'angular-all.min.js';
-var mapName    = 'angular-all.min.js.map';
 
-gulp.task('concat',function() {
-  return gulp.src([
+gulp.task('build',function() {
+  return  gulp.src([
       './webclient/js/framework/angular.js',  // Forces angular to be first
       './webclient/js/framework/*.js'         // Reset of the framework ( above will be de-duped )
-    ])
-    .pipe( NGMin( {remove : true, add : true, single_quotes : true} ) )
-    .pipe( concat( concatName, {sourcesContent : true, mapName : mapName} ) )
+     ])
+    .pipe(sourceMapper.create(-1))
+      .pipe( concat(minName) )
+      .pipe(uglify({
+        output: {
+          ascii_only: true
+        }
+      }))
+    .pipe(sourceMapper.write({
+      sourceRoot     : "//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/"
+    }))
     .pipe( gulp.dest( '.' ) )
     .pipe( gzip( {gzipOptions : { level : 9}} ) )
     .pipe( gulp.dest( '.' ) );
 });
 
-gulp.task('uglify',function(cb) {
-  return gulp.src(concatName)
-    .pipe(rename(minName))
-    .pipe(uglify({
-      output: {
-        ascii_only: true
-      }
-    }))
-    .pipe(footer('\n//# sourceMappingURL='+mapName))
-    .pipe(gulp.dest('.'))
-    .pipe(gzip({gzipOptions : { level : 9}}))
-    .pipe(gulp.dest('.'));
-});
+
 
