@@ -43,7 +43,7 @@ angular-all.js.min.map +.gz    Sourcemap with google repository linked source co
 ```
 angular-all.js.min.map +.gz
 ```
-Map files are downloadedable by browsers if the map file is availble from the server hosting the .js file, they a debugger to de-obfuscate the minified source on the fly making debugging possible.  This map file links to googles cdn souce code to keep it under 30K ( else it would be closer to 1mb! ) 
+Map files are download able by browsers if the map file is availble and in the same place as the .js file that being server.  You simply place it in the same location on the server and the debugger figures out the rest. Map files are used by debuggers to replace minified source on the fly making debugging possible.  This map file links to googles cdn souce code to keep it under 30K ( else it would be closer to 1mb! ) 
 
 
 ###Building###
