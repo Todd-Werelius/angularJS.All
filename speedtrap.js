@@ -1,3 +1,8 @@
+/**
+ * Work in progress - test speed differences between google cdn and jsDelivr
+ *
+ *
+*/
 var http = require('http');
 
 var headers = {
@@ -13,8 +18,8 @@ var options = {
   host: 'cdn.jsdelivr.net'
   //host: 'ajax.googleapis.com'
   , port: 80
-  //, path: '/angular.all/1.2.0-beta.13/angular-all.min.js'
-  , path: '/angularjs/1.2.17/angular.min.js'
+  , path: '/angular.all/1.3.0-beta.13/angular-all.min.js'
+  //, path: '/angularjs/1.2.17/angular.min.js'
   //, path: '/ajax/libs/angularjs/1.2.17/angular.min.js'
   , method: 'GET'
   , headers : headers

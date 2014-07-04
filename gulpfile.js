@@ -28,8 +28,8 @@ var minName    = 'angular-all.min.js';
 
 gulp.task('build',function() {
   return  gulp.src([
-      './webclient/js/framework/angular.js',  // Forces angular to be first
-      './webclient/js/framework/*.js'         // Reset of the framework ( above will be de-duped )
+      './source/angular.js',    // Forces angular to be first
+      './source/*.js' // Reset of the framework ( above will be de-duped )
      ])
     .pipe(sourceMapper.create(-1))
       .pipe( concat(minName) )

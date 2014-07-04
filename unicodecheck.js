@@ -1,7 +1,13 @@
+/**
+ * A simple sanity check to make sure the main files don't have any unicode character issues
+ */
+
 var fs       = require('fs');
 var checks   = [
   "E:\\Projects\\.SUPPORT\\jsdelivr\\files\\angular.all\\1.2.18\\angular-all.min.js",
-  "E:\\Projects\\.SUPPORT\\jsdelivr\\files\\angular.all\\1.3.0-beta.13\\angular-all.min.js"
+  "E:\\Projects\\.SUPPORT\\jsdelivr\\files\\angular.all\\1.2.19\\angular-all.min.js",
+  "E:\\Projects\\.SUPPORT\\jsdelivr\\files\\angular.all\\1.3.0-beta.13\\angular-all.min.js",
+  "E:\\Projects\\.SUPPORT\\jsdelivr\\files\\angular.all\\1.3.0-beta.14\\angular-all.min.js"
 ];
 
 checks.forEach(function(item){
