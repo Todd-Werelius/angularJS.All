@@ -1,15 +1,19 @@
 angularJS.All
 =============
-A concated and uglified version of AngularJS that has all of the angular add on modules included, only slightly larger than the google ultra optimzed closure minified versions when uncompressed and slightly smaller when gzip'd. 
+A concated and uglified version of AngularJS that has all of the angular add on modules included, only slightly larger than the google ultra optimzed closure minified versions when uncompressed, and slightly smaller when gzip'd, sadly jsDelivrs content providers will not accept gzip'd files and insist on doint it themselves at a much lower compression level. 
 
 The minified versions of these files are also available on jsDelivr.com a free cdn repository 
 ###Versions and Sizes###
 ```
-Version                   Google             angular-all.min.js 
-Latest 1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 53K            
-Stable 1.2.18             130K  .gz = 52K    137K  .gz = 50K
+Version Latest     Google (summed)    angular-all.min.js     jsDelivr ( not optimally gzip'd )   
+1.3.0-beta.14      136K  .gz = 55K    143K  .gz = 53K        .gz = 60K 
+1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 53K        .gz = 60K       
+
+Version Stable     Google (summed)    angular-all.min.js     jsDelivr ( not optimally gzip'd )
+1.2.19             130K  .gz = 52K    137K  .gz = 50K        .gz = 60K 
+1.2.18             130K  .gz = 52K    137K  .gz = 50K        .gz = 60K 
 ```
-Any other versions that were generated will be maintained and available on both this repository through version tags, and on jsDelivr through the same. 
+Any other versions that are generated will be maintained and available on both this repository through version tags, and on jsDelivr through the same. 
 ###Modules Included###
 ``` 
 Common
@@ -32,17 +36,16 @@ angular-messags.js
 ```
 Name                   Gzip'd  Contents
 -----------------------------------------------------------------
-angular-all.js         +.gz    Concatted unminfied output 
 angular-all.js.min     +.gz    Concatted minified output   
-angular-all.js.min.map +.gz    Sourcemap with emebded source code 
+angular-all.js.min.map +.gz    Sourcemap with google repository linked source code 
 ```
-###Map###
+###Why The Map File?###
 ```
-angular-all.js.min.map
+angular-all.js.min.map +.gz
 ```
-Is a map file with bundled source code that is useful if you need debugging. The source=[]... links will not be useful to you unless you create a similar directory structure on your own projects, clone this project and create your own, or manually modify the source entries ( easiest )
+Map files are downloadedable by browsers if the map file is availble from the server hosting the .js file, they a debugger to de-obfuscate the minified source on the fly making debugging possible.  This map file links to googles cdn souce code to keep it under 30K ( else it would be closer to 1mb! ) 
 
-You won't need to though since as was mentioned the source code is emebed directly into the map file
+
 ###Building###
 This project is built using gulp, which requires node.  Install node first if you don't have it, then simply run the following commands from the directory that this project resides in 
 ####Make sure all dependencies are present####
