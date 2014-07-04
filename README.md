@@ -10,8 +10,8 @@ Version Latest     Google (summed)    angular-all.min.js     jsDelivr ( not opti
 1.3.0-beta.13      136K  .gz = 55K    143K  .gz = 50K        .gz = 60K       
 
 Version Stable     Google (summed)    angular-all.min.js     jsDelivr ( not optimally gzip'd )
-1.2.19             130K  .gz = 52K    137K  .gz = 50K        .gz = 60K 
-1.2.18             130K  .gz = 52K    137K  .gz = 50K        .gz = 60K 
+1.2.19             130K  .gz = 52K    137K  .gz = 49K        .gz = 60K 
+1.2.18             130K  .gz = 52K    137K  .gz = 49K        .gz = 60K 
 ```
 Any other versions that are generated will be maintained and available on both this repository through version tags, and on jsDelivr through the same. 
 ###Modules Included###
