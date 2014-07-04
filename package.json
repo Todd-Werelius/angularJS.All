@@ -23,9 +23,8 @@
     "gulp-gzip": "0.0.8",
     "gulp-sourcemapper": "^0.0.1",
     "gulp-uglify": "^0.3.1",
+    "gulp-zopfli": "^0.1.1",
     "run-sequence": "^0.3.6"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }

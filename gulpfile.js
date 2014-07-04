@@ -3,7 +3,7 @@ var path          = require('path');
 var clean         = require('gulp-clean');
 var concat        = require('gulp-concat-sourcemapped');
 var sourceMapper  = require('gulp-sourcemapped');
-var gzip          = require('gulp-gzip');
+var gzip          = require('gulp-zopfli');
 var uglify        = require('gulp-uglify');
 var ris           = require('run-sequence');
 var debug         = require('gulp-debug');
@@ -42,9 +42,10 @@ gulp.task('build',function() {
       sourceRoot     : "//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/"
     }))
     .pipe( gulp.dest( '.' ) )
-    .pipe( gzip( {gzipOptions : { level : 9}} ) )
+    .pipe( gzip(  ) )
     .pipe( gulp.dest( '.' ) );
 });
 
+//{gzipOptions : { level : 9}}
 
 
