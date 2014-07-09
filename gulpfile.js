@@ -39,7 +39,7 @@ gulp.task('build',function() {
         }
       }))
     .pipe(sourceMapper.write({
-      sourceRoot     : "//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/"
+      sourceRoot     : "//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.14/"
     }))
     .pipe( gulp.dest( '.' ) )
     .pipe( gzip(  ) )
